@@ -6,16 +6,17 @@ void main() {
 
       style: TextStyle(fontSize: 30,
       decoration: TextDecoration.underline,
-      color: Colors.white
+      color: Colors.green
 
     ),
   );
 
-  var appBody = Center(
-
-    child: hiFlutter,
-
-
+  var appBody = Container(
+      child: hiFlutter,
+      alignment: Alignment.topCenter,
+      margin: const EdgeInsets.all(50),
+      color: Colors.white,
+      padding: EdgeInsets.fromLTRB(30, 30, 30, 30),
 
   );
 
