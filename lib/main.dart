@@ -11,13 +11,41 @@ void main() {
     ),
   );
 
-  var appBody = Container(
-      child: hiFlutter,
-      alignment: Alignment.topCenter,
-      margin: const EdgeInsets.all(50),
-      color: Colors.white,
-      padding: EdgeInsets.fromLTRB(30, 30, 30, 30),
-
+//  var appBody = Container(
+//     child: hiFlutter,
+//      alignment: Alignment.topCenter,
+//      margin: const EdgeInsets.all(50),
+//      color: Colors.white,
+//      padding: EdgeInsets.fromLTRB(30, 30, 30, 30),
+//
+//  );
+//  var appBody = Row(
+//   children: const <Widget>[
+//      Expanded(
+//          child: Text('第一行文字' , textAlign: TextAlign.center),
+//      ),
+//     Expanded(
+//          child: Text('第二行文字'  , textAlign: TextAlign.center),
+//      ),
+//      Expanded(
+//          child: FittedBox(
+//            fit: BoxFit.contain,
+//            child: FlutterLogo(),
+//          ),
+//      ),
+//    ],
+//  );
+  var appBody = Column(
+    children: const <Widget>[
+      Text('第一行文字'),
+      Text('第二行文字'),
+      Expanded(
+          child: FittedBox(
+            fit: BoxFit.contain,
+            child: FlutterLogo(),
+          ),
+      ),
+    ],
   );
 
   var appBar = AppBar(
